@@ -1,16 +1,12 @@
-var a = prompt("Działanie: (a * a) + (2 * a * b) - (b * b)  Wpisz liczbę a: "),
-	b = prompt("Działanie: (a * a) + (2 * a * b) - (b * b)  Wpisz liczbę b: "),
-	value = (a * a) + (2 * a * b) - (b * b);
+var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
+var animal = "Zielone słonie";
+var animalUpperCased = animal.toUpperCase();
 
-console.log(value);
 
-if (value < 0) {
-	console.log("Wynik ujemny");
-	alert(value + " to wynik ujemny");
-} else if (value > 0) {
-	console.log("Wynik dodatni");
-	alert(value + " to wynik dodatni.");
-} else {
-	console.log("Zero");
-	alert("Wynik to zero.");
-}
+var textAfter = text.replace("Papugi", animalUpperCased);
+
+console.log(textAfter);
+
+var partOfTextAfter = textAfter.slice(0, (textAfter.length / 2));
+
+console.log(partOfTextAfter);
