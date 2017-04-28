@@ -1,12 +1,5 @@
-function christmasTree(height) {
-	
-	var tree=" ".repeat(height-1)+"";
+var withButtonClass = document.getElementsByClassName("button");
 
-	for (var i = 1 ; i < height ; i++ ) {
-		var stars = 2 * i + 1;
-		tree += "\n"+" ".repeat(height-i-1)+"".repeat(stars);
-		}
-	return tree;
+for (var i = 0; i < withButtonClass.length; i++) {
+	alert(withButtonClass[i].innerText);
 }
-
-christmasTree(20);
