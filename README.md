@@ -8,7 +8,7 @@
 6) Zadanie 9.6 = `zadanie-6`
 7) Zadanie 9.7 = `zadanie-7`
 
-7) Zadanie 9.7 = `zadanie-7`
-    Install
+# Install instructions for `zadanie-7`
+    Install:
     1) Use `npm install`.
     2) Use `grunt`.
