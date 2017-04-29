@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+//Color Pallete
+$main-color: #474343;
+$main-font-color: #fff;
+$secondary-font-color: black;
+$rock-color: #777777;
+$paper-color: #5BC0DE;
+$scissors-color: #D9534F;
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: $main-color;
+	color: $main-font-color;
+	text-transform: uppercase;
+}
+
+/*=============
+Welcome Section
+===============*/
+section.welcome {
+	margin: 20px 0;
+	.container {
+		background-color: #282727;
+		padding: 30px 5px;
+		border-radius: 10px;
+		box-shadow: 1px 1px black;
+	}
+	.label {
+		margin: 0 5px;
+		font-size: 22px;
+		padding: 15px;
+		color: $secondary-font-color;
+		border: 3px solid black;
+		text-shadow: none;
+	}
+	.label-default {
+		margin-left: 50px;
+	}
+	h3.text-center {
+		font-size: 36px;
+		text-shadow: 2px 2px 2px black;
+	}
+}
+
+/*=============
+NewGame Section
+=============*/
+section.newGame {
+	margin: 20px;
+	padding: 20px;
+	#js-newGameButton {
+		padding: 15px 30px;
+		font-size: 24px;
+	}
+}
+
+/*=============
+Control Section
+=============*/
+#js-playerPickElement {
+	padding-bottom: 20px;
+	color: $secondary-font-color;
+	font-size: 24px;
+	.badge {
+		padding: 10px;
+		margin: 10px;
+		background-color: $main-color;
+		.fa {
+			font-size: 20px;
+		}
+	}
+	.btn {
+		padding: 10px 20px;
+		margin: 0 10px;
+		box-shadow: 1px 1px 1px black;
+		&:hover {
+			color: $main-font-color;
+		}
+	}
+	#js-playerPick_rock {
+		&:hover {
+			background-color: $rock-color;
+		}
+	}
+	#js-playerPick_paper {
+		&:hover {
+			background-color: $paper-color;
+		}
+	}
+	#js-playerPick_scissors {
+		&:hover {
+			background-color: $scissors-color;
+		}
+	}
+}
+
+/*=============
+Result Section
+=============*/
+section.result {
+	padding: 20px;
+	margin-top: 60px;
+	#js-playerName,
+	#computerName {
+		font-size: 30px;
+		text-shadow: 1px 1px black;
+	}
+	#js-playerName {
+		color: green;
+	}
+	#computerName {
+		color:red;
+	}
+	#js-playerPoints,
+	#js-computerPoints {
+		font-size: 26px;
+		padding: 15px;
+	}
+	#js-playerPoints{
+		margin-right: 5px;
+	}
+	#js-computerPoints{
+		margin-left: 7px;
+	}
+	.col-xs-5 {
+		margin-top: 25px;
+	}
+}

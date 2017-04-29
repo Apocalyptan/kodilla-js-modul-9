@@ -12,9 +12,9 @@ var pickRock = document.getElementById("js-playerPick_rock");
 var pickPaper = document.getElementById("js-playerPick_paper");
 var pickScissors = document.getElementById("js-playerPick_scissors");
 
-pickRock.addEventListener("click", function () { playerPick("Kamień") });
-pickPaper.addEventListener("click", function () { playerPick("Papier") });
-pickScissors.addEventListener("click", function () { playerPick("Nożyce") });
+pickRock.addEventListener("click", function () { playerPick("Kamień"); });
+pickPaper.addEventListener("click", function () { playerPick("Papier"); });
+pickScissors.addEventListener("click", function () { playerPick("Nożyce"); });
 
 /*====
 Starting Game Values
@@ -120,6 +120,8 @@ function checkRoundWinner(playerPick, computerPick) {
 
 		if (playerPick == computerPick) {
 			winnerIs = "noone"; // remis
+			playerResultElem.innerHTML = "Remis!";
+			computerResultElem.innerHTML = "Remis!";
 		}
 		else if (
 			(computerPick == "Kamień" && playerPick == "Nożyce") ||
